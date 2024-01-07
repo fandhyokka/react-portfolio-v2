@@ -10,6 +10,7 @@ module.exports = {
         red: "#DC4492",
         yellow: "#FDCC49",
         grey: "#ededed",
+        white: "#ffffff",
         "dark-grey": "#757575",
         "opaque-black": "rgba(0,0,0,0.35)",
       },
@@ -21,6 +22,12 @@ module.exports = {
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
         opensans: ["Open Sans", "sans-serif"],
+      },
+      content: {
+        brush: "url('./assets/brush.png')",
+        person1: "url('./assets/person-1.png')",
+        person2: "url('./assets/person-2.png')",
+        person3: "url('./assets/person-3.png')",
       },
     },
     screens: {

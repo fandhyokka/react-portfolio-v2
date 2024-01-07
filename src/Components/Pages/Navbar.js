@@ -10,7 +10,11 @@ import { MdDownload } from "react-icons/md";
 const Link = ({ page, currentPage, setCurrentPage }) => {
   const lowerCasePage = page.toLowerCase();
   return (
-    <AnchorLink className={`${currentPage === lowerCasePage ? "text-yellow" : ""} hover:text-yellow transition duration-500`} href={`#${lowerCasePage}`} onClick={() => setCurrentPage(lowerCasePage)}>
+    <AnchorLink
+      className={`${currentPage === lowerCasePage ? "text-yellow" : ""} hover:bg-gradient-to-r from-green-500 to-blue-500 hover:text-white transition duration-500`}
+      href={`#${lowerCasePage}`}
+      onClick={() => setCurrentPage(lowerCasePage)}
+    >
       {page}
     </AnchorLink>
   );
