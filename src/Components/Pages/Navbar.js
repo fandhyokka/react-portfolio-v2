@@ -11,7 +11,7 @@ const Link = ({ page, currentPage, setCurrentPage }) => {
   const lowerCasePage = page.toLowerCase();
   return (
     <AnchorLink
-      className={`${currentPage === lowerCasePage ? "text-yellow" : ""} hover:bg-gradient-to-r from-green-500 to-blue-500 hover:text-white transition duration-500`}
+      className={`${currentPage === lowerCasePage ? "text-white" : ""} hover:bg-gradient-to-r from-green-500 to-blue-500 hover:text-white transition duration-500`}
       href={`#${lowerCasePage}`}
       onClick={() => setCurrentPage(lowerCasePage)}
     >
@@ -23,7 +23,7 @@ const Link = ({ page, currentPage, setCurrentPage }) => {
 const Navbar = ({ isTopOfPage, currentPage, setcurrentPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isDesktop = useMediaQuery("(min-width: 768px)");
-  const navbarBackground = isTopOfPage ? "" : "bg-deep-blue";
+  const navbarBackground = isTopOfPage ? "" : "bg-gradient-to-r from-green-500 to-blue-500";
 
   const handleResume = () => {
     const isResume = true;
