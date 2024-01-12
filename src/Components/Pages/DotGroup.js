@@ -10,13 +10,13 @@ const DotGroup = ({ currentPage, setCurrentPage }) => {
 
   return (
     <div className="flex flex-col gap-6 fixed top-[60%] right-9">
-      <AnchorLink href="#home" className={`${currentPage === "home" ? additionalStyles : "bg-dark-grey"} w-3 h-3 rounded-full`} onClick={() => setCurrentPage("home")} />
+      <AnchorLink href="#about" className={`${currentPage === "home" ? additionalStyles : "bg-dark-grey"} w-3 h-3 rounded-full`} onClick={() => setCurrentPage("about")} />
 
       <AnchorLink href="#skills" className={`${currentPage === "skills" ? additionalStyles : "bg-white"} w-3 h-3 rounded-full`} onClick={() => setCurrentPage("skills")} />
 
       <AnchorLink href="#projects" className={`${currentPage === "projects" ? additionalStyles : "bg-white"} w-3 h-3 rounded-full`} onClick={() => setCurrentPage("projects")} />
 
-      <AnchorLink href="#contacts" className={`${currentPage === "contacts" ? additionalStyles : "bg-white"} w-3 h-3 rounded-full`} onClick={() => setCurrentPage("contacts")} />
+      <AnchorLink href="#contact" className={`${currentPage === "contact" ? additionalStyles : "bg-white"} w-3 h-3 rounded-full`} onClick={() => setCurrentPage("contact")} />
     </div>
   );
 };

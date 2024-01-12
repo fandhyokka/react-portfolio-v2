@@ -20,7 +20,7 @@ const Link = ({ page, currentPage, setCurrentPage }) => {
   );
 };
 
-const Navbar = ({ isTopOfPage, currentPage, setcurrentPage }) => {
+const Navbar = ({ isTopOfPage, currentPage, setCurrentPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isDesktop = useMediaQuery("(min-width: 768px)");
   const navbarBackground = isTopOfPage ? "" : "bg-gradient-to-r from-green-500 to-blue-500";
@@ -32,21 +32,23 @@ const Navbar = ({ isTopOfPage, currentPage, setcurrentPage }) => {
       const resumeUrl = `${process.env.PUBLIC_URL}/Assets/Resume/resume.pdf`;
       window.open(resumeUrl, "_blank");
     } else {
-      setcurrentPage(lowerCasePage);
+      setCurrentPage(lowerCasePage);
     }
   };
 
   return (
     <nav className={`${navbarBackground} z-40 w-full fixed py-3`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
-        <Logo />
+        <AnchorLink href="#about" onClick={() => setCurrentPage("about")}>
+          <Logo />
+        </AnchorLink>
 
         {isDesktop ? (
           <div className="flex justify-between items-center gap-5 font-opensans text-sm text-white font-semibold">
-            <Link page="About" currentPage={currentPage} setcurrentPage={setcurrentPage} />
-            <Link page="Skills" currentPage={currentPage} setcurrentPage={setcurrentPage} />
-            <Link page="Projects" currentPage={currentPage} setcurrentPage={setcurrentPage} />
-            <Link page="Contact" currentPage={currentPage} setcurrentPage={setcurrentPage} />
+            <Link page="About" currentPage={currentPage} setCurrentPage={setCurrentPage} />
+            <Link page="Skills" currentPage={currentPage} setCurrentPage={setCurrentPage} />
+            <Link page="Projects" currentPage={currentPage} setCurrentPage={setCurrentPage} />
+            <Link page="Contact" currentPage={currentPage} setCurrentPage={setCurrentPage} />
             <CustomButton onClick={handleResume}>
               <div className="flex items-center h-10 w-25">
                 <MdDownload className="text-white ms-1" size={22} />
@@ -72,10 +74,10 @@ const Navbar = ({ isTopOfPage, currentPage, setcurrentPage }) => {
 
             {/* Mobile Navigation Links */}
             <div className="flex flex-col gap-5 mt-[25%] ml-[33%] text-2xl text-white">
-              <Link page="About" currentPage={currentPage} setcurrentPage={setcurrentPage} />
-              <Link page="Skills" currentPage={currentPage} setcurrentPage={setcurrentPage} />
-              <Link page="Projects" currentPage={currentPage} setcurrentPage={setcurrentPage} />
-              <Link page="Contact" currentPage={currentPage} setcurrentPage={setcurrentPage} />
+              <Link page="About" currentPage={currentPage} setCurrentPage={setCurrentPage} />
+              <Link page="Skills" currentPage={currentPage} setCurrentPage={setCurrentPage} />
+              <Link page="Projects" currentPage={currentPage} setCurrentPage={setCurrentPage} />
+              <Link page="Contact" currentPage={currentPage} setCurrentPage={setCurrentPage} />
               <CustomButton onClick={handleResume}>
                 <div className="flex items-center h-10 w-25">
                   <MdDownload className="text-white ms-4" size={24} />
