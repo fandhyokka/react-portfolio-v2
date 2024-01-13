@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import useMediaQuery from "./Hooks/useMediaQuery";
 import Navbar from "./Components/Pages/Navbar";
 import Header from "./Components/Pages/Header";
-import Skill from "./Components/Pages/Skills";
+import Skills from "./Components/Pages/Skills";
 import Projects from "./Components/Pages/Project";
 import Contact from "./Components/Pages/Contact";
+import Footer from "./Components/Pages/Footer";
 import DotGroup from "./Components/Pages/DotGroup";
 
 function App() {
@@ -36,7 +38,7 @@ function App() {
       </div>
       <div className="w-5/6 mx-auto md:h-full ">
         <motion.div margin="0 0 -200px 0" amount="all" onViewportEnter={() => setCurrentPage("skills")}>
-          <Skill />
+          <Skills />
         </motion.div>
       </div>
       <div className="w-5/6 mx-auto md:h-full ">
@@ -48,6 +50,9 @@ function App() {
         <motion.div margin="0 0 -200px 0" amount="all" onViewportEnter={() => setCurrentPage("contact")}>
           <Contact />
         </motion.div>
+      </div>
+      <div className="w-5/6 mx-auto md:h-full ">
+        <Footer />
       </div>
     </div>
   );

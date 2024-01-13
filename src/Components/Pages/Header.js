@@ -39,7 +39,7 @@ const Header = ({ setCurrentPage }) => {
           >
             <p className="text-7xl font-opensans z-10 text-start font-bold md:text-start">FANDHY OKKA PRATAMA</p>
 
-            <p className="mt-10 mb-7 text-lg font-opensans text-start md:text-start">A Junior FrontEnd Developer. Based in Bandung/Jakarta, Indonesia.</p>
+            <p className="mt-10 mb-7 text-lg font-opensans text-start md:text-start">A Junior Web Developer. Based in Bandung/Jakarta, Indonesia.</p>
           </motion.div>
 
           <motion.div
@@ -103,11 +103,11 @@ const Header = ({ setCurrentPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="mt-10 font-opensans font-semibold text-justify md:text-justify">
+          <p className="mt-10 font-opensans font-medium text-justify md:text-justify">
             My Name is Fandhy Okka Pratama, boasting over 6 years of extensive experience in customer service and holding a degree in business management. In my most recent role, I served as a senior Customer Experience professional at a
             major Japanese company specializing in the Japanese Snack subscription box industry.
           </p>
-          <p className="text-justify font-opensans font-semibold md:text-justify">
+          <p className="text-justify font-opensans font-medium md:text-justify">
             Motivated by a profound interest in the realm of web development and the challenge of creating visually appealing, responsive, and interactive websites, I made the decision to pivot my career path to become a Front-End
             Developer. In July 2023 until November 2023, I commenced the Front End Engineer Bootcamp at Binar Academy, where I immersed myself in the fundamentals of front-end development. The bootcamp covered a spectrum of topics,
             including HTML, CSS, and Javascript, with a specific emphasis on crafting responsive web designs. My journey also encompassed gaining proficiency in website development using React JS and various accompanying libraries. A

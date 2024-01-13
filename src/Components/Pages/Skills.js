@@ -36,7 +36,7 @@ const Skills = () => {
     <section id="skills">
       <div className="md:flex md:flex-col md:items-center md:gap-16 text-center">
         <motion.div
-          className={`font-opensans font-semibold text-4xl ${isAboveLarge ? "" : "text-center"} ${isMobile ? "mt-4 mb-2" : ""}`}
+          className={`font-opensans font-semibold text-4xl ${isAboveLarge ? "" : "text-center"} ${isMobile ? "mt-4 mb-5" : ""}`}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
