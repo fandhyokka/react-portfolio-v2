@@ -1,6 +1,6 @@
 import React from "react";
 
-const Logo = () => {
+const MyLogo = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="7rem" fill="white" height="2rem" version="1" viewBox="0 0 282 56">
       <path
@@ -11,4 +11,4 @@ const Logo = () => {
   );
 };
 
-export default Logo;
+export default MyLogo;

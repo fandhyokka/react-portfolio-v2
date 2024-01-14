@@ -1,6 +1,6 @@
 import { useState } from "react";
 import useMediaQuery from "../../Hooks/useMediaQuery";
-import Logo from "../../Components/Logo/Logo";
+import MyLogo from "../Logo/Logo";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import CustomButton from "../Reusable/Button";
 import { FaBars } from "react-icons/fa";
@@ -40,7 +40,7 @@ const Navbar = ({ isTopOfPage, currentPage, setCurrentPage }) => {
     <nav className={`${navbarBackground} z-40 w-full fixed py-3`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
         <AnchorLink href="#about" onClick={() => setCurrentPage("about")}>
-          <Logo />
+          <MyLogo />
         </AnchorLink>
 
         {isDesktop ? (
