@@ -1,6 +1,6 @@
 import { useState } from "react";
 import useMediaQuery from "../../Hooks/useMediaQuery";
-import MyLogo from "../Logo/Logo";
+import MyLogo from "../Logo/MyLogo";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import CustomButton from "../Reusable/Button";
 import { FaBars } from "react-icons/fa";
