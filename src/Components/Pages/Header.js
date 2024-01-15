@@ -67,7 +67,7 @@ const Header = ({ setCurrentPage }) => {
           </motion.div>
 
           <motion.div
-            className="flex mt-5 justify-start md:justify-start"
+            className="flex mt-10 justify-start md:justify-start"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}

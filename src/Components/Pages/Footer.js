@@ -1,10 +1,10 @@
-import React from "react";
-
 const Footer = () => {
   return (
-    <footer>
-      <div></div>
-      <div></div>
+    <footer className=" pt-10">
+      <div className="flex gap-2 justify-center">
+        <p>Copyright 2024 </p>
+        <p>- Fandhy Okka Pratama</p>
+      </div>
     </footer>
   );
 };
