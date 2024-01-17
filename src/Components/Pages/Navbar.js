@@ -29,7 +29,7 @@ const Navbar = ({ isTopOfPage, currentPage, setCurrentPage }) => {
     const isResume = true;
     const lowerCasePage = "resume";
     if (isResume) {
-      const resumeUrl = `${process.env.PUBLIC_URL}/Assets/Resume/resume.pdf`;
+      const resumeUrl = `${process.env.PUBLIC_URL}/Assets/Resume/resume_updated.pdf`;
       window.open(resumeUrl, "_blank");
     } else {
       setCurrentPage(lowerCasePage);
