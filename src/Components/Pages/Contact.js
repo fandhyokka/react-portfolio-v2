@@ -102,7 +102,7 @@ const Contact = () => {
             <div className="flex mb-4">
               <div className="flex items-center">
                 <FaWhatsapp size={iconSize} />
-                <span className="ms-2 text-base font-semibold font-opensans text-white">+62 85930194670</span>
+                <span className="ms-2 text-base font-semibold font-opensans text-white">+62 8979723025</span>
               </div>
             </div>
             <SocialMedia size={iconSize} />
