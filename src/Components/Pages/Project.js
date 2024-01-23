@@ -2,6 +2,7 @@ import React from "react";
 import useMediaQuery from "../../Hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import { FaExternalLinkAlt, FaGithubSquare } from "react-icons/fa";
+import Card from "../Reusable/Card";
 
 const Projects = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
@@ -13,14 +14,14 @@ const Projects = () => {
       technologies: ["React", "Bootstrap", "Redux"],
       imageSrc: `${process.env.PUBLIC_URL}/../Assets/Images/CMS.png`,
       liveLink: "https://kelompok1-platinum-cms.vercel.app/login",
-      githubLink: "https://your-live-link.com",
+      githubLink: "https://github.com/singgihseptiann/kelompok1-platinum-cms",
     },
     {
       title: "Binar Car Rent (Customer Page Site)",
       description: "This was the team project to complete the Bootcamp challenges. I was involved in creating Login and Sign Up Components.",
       technologies: ["React", "Bootstrap", "Redux"],
       imageSrc: `${process.env.PUBLIC_URL}/../Assets/Images/CustomerPage.png`,
-      githubLink: "https://github.com/yourusername/customer-page",
+      githubLink: "https://github.com/singgihseptiann/kelompok1-platinum-customer-page",
       liveLink: "https://kelompok1-platinum-customer-page.vercel.app/login",
     },
     {
@@ -28,8 +29,8 @@ const Projects = () => {
       description: "This is my personal portfolio website. I will be posting all of my projects here.",
       technologies: ["React", "TailwindCSS", "Framer-Motion"],
       imageSrc: `${process.env.PUBLIC_URL}/../Assets/Images/Portfolio.png`,
-      githubLink: "https://github.com/yourusername/portfolio",
-      liveLink: "https://your-live-link.com",
+      githubLink: "https://github.com/fandhyokka/react-portfolio-v2",
+      liveLink: "https://fandhyokka-portfolio.vercel.app/",
     },
   ];
 
@@ -40,6 +41,7 @@ const Projects = () => {
           MY <span className="text-green-800">PROJECTS</span>
         </p>
       </div>
+
       <div className={`mb-10 flex flex-col md:flex-row ${isAboveLarge ? "gap-4" : "gap-10"}`}>
         {projects.map((project, index) => (
           <motion.div key={index} className={`relative rounded overflow-hidden ${isAboveLarge ? "mb-10" : "md:w-full"}`} whileHover={{ filter: "brightness(75% " }}>
